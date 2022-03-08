@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Media } from 'reactstrap';
+import React, { Component } from 'react';  //Siempre importamos el componente de React a la hora de empezar a crear un componente
+import { Media } from 'reactstrap'; 
 
 class Menu extends Component {
     constructor(props) {
@@ -43,9 +43,9 @@ class Menu extends Component {
     }
 
     render() {
-        const menu = this.state.dishes.map((dish) => {
+        const menu = this.state.dishes.map((dish) => { 
             return (
-              <div key={dish.id} className="col-12 mt-5">
+              <div key={dish.id} className="col-12 mt-5"> {/* Siempre se agrega un key para que react pueda construir los objetos con un orden */}
                 <Media tag="li">
                   <Media left middle>
                       <Media object src={dish.image} alt={dish.name} />
@@ -71,4 +71,4 @@ class Menu extends Component {
     }
 }
 
-export default Menu;
+export default Menu; // Y al final del archivo siempre exportamos el componente creado para poder usarlo en otros archivos
