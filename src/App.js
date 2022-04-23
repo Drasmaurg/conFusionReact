@@ -1,8 +1,8 @@
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import { Nav, Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './components/MenuComponents';
 import './App.css';
-import React, {Component} from 'react';
 import { DISHES } from './shared/dishes';
 
 
